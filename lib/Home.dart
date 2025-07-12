@@ -18,20 +18,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: Icon(Icons.camera),
-        backgroundColor: Colors.black,
-        foregroundColor: Colors.white,
-        title: Text("Whatsapp"),
-        centerTitle: true,
-        actions: [
-          Icon(Icons.qr_code_scanner),
-          SizedBox(width: 20),
-          Icon(Icons.camera_alt),
-          SizedBox(width: 20),
-          Icon(Icons.more_vert),
-        ],
-      ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.chat),
@@ -49,10 +36,10 @@ class _HomeState extends State<Home> {
         unselectedItemColor: Colors.black,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Chats"),
-          BottomNavigationBarItem(icon: Icon(Icons.update), label: "Update"),
+          BottomNavigationBarItem(icon: Icon(Icons.update), label: "Updates"),
           BottomNavigationBarItem(
             icon: Icon(Icons.people_outlined),
-            label: "community",
+            label: "communities",
           ),
           BottomNavigationBarItem(icon: Icon(Icons.call), label: "Calls"),
         ],
